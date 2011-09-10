@@ -7,7 +7,7 @@ SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 
 
 CREATE TABLE `location` (
-  `cust_no` varchar(8) DEFAULT NULL,
+  `id` varchar(8) DEFAULT NULL,
   `name` varchar(32) DEFAULT NULL,
   `street_1` varchar(32) DEFAULT NULL,
   `street_2` varchar(32) DEFAULT NULL,
@@ -20,7 +20,7 @@ CREATE TABLE `location` (
   `fax` varchar(14) DEFAULT NULL,
   `lat` double DEFAULT NULL,
   `lon` double DEFAULT NULL,
-  KEY `cust_no` (`cust_no`)
+  KEY `id` (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 CREATE TABLE `zip_codes` (
